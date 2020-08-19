@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Welcome</h1>
+	<div class="login">
+		<h1>predict price</h1>
+		<form action="{{url_for('predict')}}"method="post">
+			<input type="text" name="sqft" placeholder="experience" required="required" />
+			<input type="text" name="bath" placeholder="experience" required="required" />
+			<input type="text" name="bal" placeholder="experience" required="required" />
+			<input type="text" name="room" placeholder="experience" required="required" />
+			<input type="text" name="loc" placeholder="experience" required="required" />
+			<button type="submit">predic</button>
+
+			
+		</form>
+		<br>
+		<br>
+		{{prediction_text}}
+	</div>
+
+</body>
+</html>
